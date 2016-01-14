@@ -7,7 +7,7 @@ module Meditate
       end
 
       def add_stylesheets
-        inject_into_file 'app/assets/stylesheets/application.css', "*= require meditate\n", before: /\*\//, verbose: true
+        inject_into_file 'app/assets/stylesheets/application.scss', "*= require meditate\n", before: /\*\//, verbose: true
       end
 
       def setup_routes
