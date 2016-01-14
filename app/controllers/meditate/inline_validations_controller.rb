@@ -1,5 +1,5 @@
 module Meditate
-  class InlineValidationsController < ApplicationController
+  class InlineValidationsController < ::ApplicationController
 
     def create
       object = validate_params[/^(.*?)\?/].to_s.gsub('?', '').try(:capitalize).try(:constantize)
