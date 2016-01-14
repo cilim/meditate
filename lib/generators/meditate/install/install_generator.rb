@@ -3,7 +3,7 @@ require 'rails/generators/base'
 module Meditate
   module Generators
     class InstallGenerator < Rails::Generators::Base
-      source_root File.expand_path("../../templates/controllers", __FILE__)
+      source_root File.expand_path("../../../templates/controllers", __FILE__)
 
       def add_javascripts
         append_file 'app/assets/javascripts/application.js', "//= require meditate\n"
