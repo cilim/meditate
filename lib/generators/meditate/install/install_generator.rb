@@ -14,6 +14,10 @@ module Meditate
         route "resources :inline_validations, only: [:create]"
       end
 
+      def create_controller_file
+        create_file "app/controllers/inline_validations_controller.rb", "This is a placeholder"
+      end
+
       def copy_controller
         copy_file "inline_validations_controller.rb", "app/controllers/inline_validations_controller.rb"
       end
