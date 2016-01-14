@@ -15,7 +15,7 @@ module Meditate
       end
 
       def copy_controller
-        copy_file "inline_validations_controller.rb", "app/controllers/#{file_name}.rb"
+        copy_file "inline_validations_controller.rb", "app/controllers/inline_validations_controller.rb"
       end
     end
   end
